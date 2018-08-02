@@ -8,8 +8,8 @@ const burger = (props) => {
 
   let burgerIngredients = ingredientsArray.map(ingredientKey => {
     return [...Array(props.ingredients[ingredientKey])].map((_, i) => {
-      console.log(i);
-      console.log(ingredientKey);
+      // console.log(i);
+      // console.log(ingredientKey);
       return <BurgerIngredient key={ingredientKey + i} type={ingredientKey} />;
     });
   }).reduce((arr, el) => {
